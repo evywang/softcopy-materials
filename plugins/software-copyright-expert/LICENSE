@@ -2,10 +2,6 @@ MIT License
 
 Copyright (c) 2026 softcopy-materials contributors
 
-本技能是对 Fokkyp/SoftwareCopyright-Skill（https://github.com/Fokkyp/SoftwareCopyright-Skill，
-MIT License，Copyright (c) Fokkyp）的功能做 clean-room 分析后重新实现的独立作品；
-原项目与本项目均按 MIT 许可证分发。
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

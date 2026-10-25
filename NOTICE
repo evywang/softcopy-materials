@@ -1,0 +1,37 @@
+# NOTICE
+
+## 来源与著作权声明
+
+本项目（softcopy-materials）是对开源项目
+**[Fokkyp/SoftwareCopyright-Skill](https://github.com/Fokkyp/SoftwareCopyright-Skill)**
+（MIT License，Copyright (c) Fokkyp）做功能层面的 clean-room 分析后**重新实现**的独立作品。
+
+- 架构与代码均为重写，非原实现的复制或分支。
+- 重新实现过程中修复了原实现的已知缺陷：接口返回结果丢失、章节编号错乱、
+  正文盲替换、自检记录失真、序列图渲染调用错误、演示项目残留等。
+- 原项目与本项目均按 MIT 许可证分发；原项目的 MIT 著作权声明见下方。
+
+原项目的许可声明：
+
+```text
+MIT License
+
+Copyright (c) Fokkyp
+```
+
+本项目自身的许可见 [LICENSE](LICENSE)。
+
+## 第三方组件
+
+本项目的运行依赖下列第三方软件，但**不包含**其代码，也不随本仓库分发：
+
+| 组件 | 用途 | 许可 |
+|------|------|------|
+| [OfficeCLI](https://github.com/iOfficeAI/OfficeCLI) | 生成与校验正式 Word（DOCX）交付物 | 由其发行方提供 |
+| graphviz | 把 DOT 图纸渲染为 PNG | EPL-1.0 |
+| Node.js + `@playwright/cli` | 可选的 Playwright 截图方式 | MIT |
+
+## 生成材料的责任
+
+本项目产出的是**申请材料的草稿与审查意见**，不是法律意见，也不构成任何担保。
+材料是否符合项目实际与版权保护中心官网当前要求，由使用者自行核对。

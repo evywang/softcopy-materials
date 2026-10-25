@@ -79,17 +79,17 @@ python3 scripts/register_expert.py <expert-dir>
 
 ## 分发给他人
 
-本专家以 **marketplace（插件市场）** 为单位分发：市场清单在压缩包根目录
-（`.codebuddy-plugin/marketplace.json`），专家本体在 `plugins/software-copyright-expert/`。
+本专家已发布为公开市场仓库：**[evywang/softcopy-materials](https://github.com/evywang/softcopy-materials)**
+（仓库根即市场清单 `.codebuddy-plugin/marketplace.json`，专家本体在 `plugins/software-copyright-expert/`）。
 
 **给他人使用**（对方无需任何额外配置）：
 
 ```bash
-# 1. 对方添加市场（GitHub 仓库写 owner/repo；或直接给 zip 的 HTTP 地址）
-/plugin marketplace add <owner>/<repo>
+# 1. 对方添加市场
+/plugin marketplace add evywang/softcopy-materials
 
 # 2. 安装并启用
-/plugin install software-copyright-expert@my-experts
+/plugin install software-copyright-expert@softcopy-materials
 ```
 
 团队批量分发时，在项目 `.codebuddy/settings.json` 里写死市场与插件，成员启动即自动装好：
@@ -97,13 +97,15 @@ python3 scripts/register_expert.py <expert-dir>
 ```json
 {
   "extraKnownMarketplaces": {
-    "my-experts": { "source": { "source": "github", "repo": "<owner>/<repo>" } }
+    "softcopy-materials": {
+      "source": { "source": "github", "repo": "evywang/softcopy-materials" }
+    }
   },
-  "enabledPlugins": { "software-copyright-expert@my-experts": true }
+  "enabledPlugins": { "software-copyright-expert@softcopy-materials": true }
 }
 ```
 
-**自己重新打包**（专家更新后重建分发包）：
+**自己重新打包**（专家更新后重建分发物）：
 
 ```bash
 # 单个专家包

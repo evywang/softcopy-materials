@@ -9,9 +9,9 @@
   "repository": "https://github.com/evywang/softcopy-materials",
   "plugins": [
     {
-      "name": "software-copyright-expert",
+      "name": "softcopy-expert",
       "version": "1.2.0",
-      "source": "./plugins/software-copyright-expert",
+      "source": "./plugins/softcopy-expert",
       "description": "Produces China software copyright registration materials - application form fields, code extracts, operation manual or technical design document - then reviews the final deliverables for registration compliance and gates the submission on that review.",
       "description_zh": "依据真实项目源码编写中国软著登记全套资料，再以审查专员视角复核最终交付物并以审查结论作为提交门禁。",
       "author": {

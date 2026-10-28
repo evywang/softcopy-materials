@@ -119,7 +119,7 @@ def git_publish(repo_dir: Path, repo: str, push: bool) -> None:
     if status:
         run(["git", "commit", "-m", "feat: 发布软著材料专家与市场清单\n\n"
                                     "- 新增 .codebuddy-plugin/marketplace.json，可直接作为插件市场添加\n"
-                                    "- 新增 plugins/software-copyright-expert 专家包\n"
+                                    "- 新增 plugins/softcopy-expert 专家包\n"
                                     "- 新增 docs 与 LICENSE"], repo_dir)
     else:
         print("（无变更，跳过提交）")

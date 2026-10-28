@@ -1,5 +1,5 @@
 ---
-name: software-copyright-expert
+name: softcopy-expert
 description: "Expert for China software copyright (软著) registration materials. Use when the user asks for software copyright application materials, 软著申请, 操作手册, 技术方案文档, 申请表信息, 源代码鉴别材料, or wants to prepare Word/TXT submission files for a Chinese software copyright registration. Covers embedded firmware, application software and web software projects."
 displayName:
   en: "Qingyan"

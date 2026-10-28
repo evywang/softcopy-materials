@@ -1,5 +1,5 @@
 {
-  "name": "software-copyright-expert",
+  "name": "softcopy-expert",
   "version": "1.2.0",
   "description": "Produces China software copyright registration materials from real project source code - application form fields, code extracts, operation manual or technical design document - then reviews the final deliverables for registration compliance and gates the submission on that review.",
   "author": {
@@ -16,11 +16,11 @@
     "china"
   ],
   "category": "legal-compliance",
-  "agents": ["./agents/software-copyright-expert.md"],
+  "agents": ["./agents/softcopy-expert.md"],
   "skills": ["./skills/softcopy-materials"],
 
   "expertType": "agent",
-  "agentName": "software-copyright-expert",
+  "agentName": "softcopy-expert",
 
   "displayName": {
     "en": "Qingyan",
@@ -40,7 +40,7 @@
     "zh": "帮我为当前项目生成软件著作权申请材料",
     "en": "Generate software copyright application materials for the current project"
   },
-  "plugin": "software-copyright-expert",
+  "plugin": "softcopy-expert",
   "tags": [
     { "en": "Copyright Registration", "zh": "软著登记办理" },
     { "en": "Code Extracts", "zh": "代码鉴别材料" },

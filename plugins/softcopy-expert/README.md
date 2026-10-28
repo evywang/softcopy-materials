@@ -48,9 +48,9 @@ Agent 型（单个 AI 专家）
 ## 目录结构
 
 ```text
-software-copyright-expert/
+softcopy-expert/
 ├── .codebuddy-plugin/plugin.json
-├── agents/software-copyright-expert.md      # 专家角色定义与工作流程
+├── agents/softcopy-expert.md      # 专家角色定义与工作流程
 ├── skills/softcopy-materials/                # 软著材料生成技能（SKILL.md + references + scripts）
 ├── avatars/expert.png
 └── README.md
@@ -68,7 +68,7 @@ software-copyright-expert/
 将专家包目录放到专家目录下：
 
 ```
-C:\Users\wange\.workbuddy\plugins\marketplaces\my-experts\plugins/software-copyright-expert/
+C:\Users\wange\.workbuddy\plugins\marketplaces\my-experts\plugins/softcopy-expert/
 ```
 
 然后运行注册命令使其可见：
@@ -80,7 +80,7 @@ python3 scripts/register_expert.py <expert-dir>
 ## 分发给他人
 
 本专家已发布为公开市场仓库：**[evywang/softcopy-materials](https://github.com/evywang/softcopy-materials)**
-（仓库根即市场清单 `.codebuddy-plugin/marketplace.json`，专家本体在 `plugins/software-copyright-expert/`）。
+（仓库根即市场清单 `.codebuddy-plugin/marketplace.json`，专家本体在 `plugins/softcopy-expert/`）。
 
 **给他人使用**（对方无需任何额外配置）：
 
@@ -89,7 +89,7 @@ python3 scripts/register_expert.py <expert-dir>
 /plugin marketplace add evywang/softcopy-materials
 
 # 2. 安装并启用
-/plugin install software-copyright-expert@softcopy-materials
+/plugin install softcopy-expert@softcopy-materials
 ```
 
 团队批量分发时，在项目 `.codebuddy/settings.json` 里写死市场与插件，成员启动即自动装好：
@@ -101,7 +101,7 @@ python3 scripts/register_expert.py <expert-dir>
       "source": { "source": "github", "repo": "evywang/softcopy-materials" }
     }
   },
-  "enabledPlugins": { "software-copyright-expert@softcopy-materials": true }
+  "enabledPlugins": { "softcopy-expert@softcopy-materials": true }
 }
 ```
 

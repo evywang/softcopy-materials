@@ -3,7 +3,7 @@
 从**真实项目源码**生成中国软件著作权（软著）登记所需的全套申请资料，并作为
 **软著审查专员**复核最终交付物、以审查结论作为提交门禁。
 
-- 专家包：`plugins/software-copyright-expert/`（内含完整技能 `skills/softcopy-materials/`）
+- 专家包：`plugins/softcopy-expert/`（内含完整技能 `skills/softcopy-materials/`）
 - 市场清单：`.codebuddy-plugin/marketplace.json`
 
 ## 安装
@@ -15,7 +15,7 @@
 /plugin marketplace add evywang/softcopy-materials
 
 # 2. 安装专家
-/plugin install software-copyright-expert@softcopy-materials
+/plugin install softcopy-expert@softcopy-materials
 ```
 
 团队批量分发：在项目 `.codebuddy/settings.json` 中写死市场与插件，成员启动即自动装好。
@@ -28,7 +28,7 @@
     }
   },
   "enabledPlugins": {
-    "software-copyright-expert@softcopy-materials": true
+    "softcopy-expert@softcopy-materials": true
   }
 }
 ```
@@ -49,7 +49,7 @@
 ```
 softcopy-materials/
 ├── .codebuddy-plugin/marketplace.json   市场清单（CLI 只在仓库根找它）
-├── plugins/software-copyright-expert/    专家包
+├── plugins/softcopy-expert/    专家包
 │   ├── .codebuddy-plugin/plugin.json     专家清单
 │   ├── agents/                           专家定义（青砚）
 │   ├── avatars/                          头像
@@ -64,10 +64,10 @@ softcopy-materials/
 ## 单独使用技能（不走专家）
 
 只想用技能、不需要专家人格时，直接取用
-`plugins/software-copyright-expert/skills/softcopy-materials/`：
+`plugins/softcopy-expert/skills/softcopy-materials/`：
 
 ```bash
-cp -r plugins/software-copyright-expert/skills/softcopy-materials <你的项目>/.codebuddy/skills/
+cp -r plugins/softcopy-expert/skills/softcopy-materials <你的项目>/.codebuddy/skills/
 ```
 
 ## 环境要求

@@ -6,7 +6,7 @@
 
 | 插件名 | 版本 | 分类 | 描述 |
 |--------|------|------|------|
-| **software-copyright-expert** | 1.2.0 | 法务安全 | 依据真实项目源码编写中国软著登记全套资料（申请表字段、代码鉴别材料、操作手册 / 技术方案文档），再以软著审查专员视角复核最终交付物并出具合规审查报告，以审查结论作为提交门禁 |
+| **softcopy-expert** | 1.2.0 | 法务安全 | 依据真实项目源码编写中国软著登记全套资料（申请表字段、代码鉴别材料、操作手册 / 技术方案文档），再以软著审查专员视角复核最终交付物并出具合规审查报告，以审查结论作为提交门禁 |
 
 ## 安装
 
@@ -20,7 +20,7 @@
 /plugin
 
 # 或直接安装
-/plugin install software-copyright-expert@softcopy-materials
+/plugin install softcopy-expert@softcopy-materials
 ```
 
 ### 方式二：项目配置自动安装
@@ -38,7 +38,7 @@
     }
   },
   "enabledPlugins": {
-    "software-copyright-expert@softcopy-materials": true
+    "softcopy-expert@softcopy-materials": true
   }
 }
 ```
@@ -47,7 +47,7 @@
 
 ```bash
 codebuddy plugin marketplace add <owner>/<repo>
-codebuddy plugin install software-copyright-expert@softcopy-materials
+codebuddy plugin install softcopy-expert@softcopy-materials
 ```
 
 ## 使用示例
@@ -63,5 +63,5 @@ codebuddy plugin install software-copyright-expert@softcopy-materials
 > 市场中的插件包含可执行脚本（Python）与文件读写能力。CodeBuddy 无法控制插件内
 > 包含的文件或程序，也无法验证它们是否按预期工作。安装前请确认你信任该插件。
 
-`software-copyright-expert` 的全部脚本均为纯标准库 Python，只在当前工作目录下
+`softcopy-expert` 的全部脚本均为纯标准库 Python，只在当前工作目录下
 `软著/` 内读写文件；正式生成 DOCX 依赖本机安装的 OfficeCLI。
